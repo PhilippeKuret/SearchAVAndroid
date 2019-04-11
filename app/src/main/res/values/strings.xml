@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Seach_AV_491</string>
+    <string name="Title">Title: %1$s</string>
+    <string name="Duration">Duration: %1$s</string>
+    <string name="UploadedUser">Uploaded by: %1$s</string>
+    <string name="SuccessSave">Transcription was successfully saved</string>
+    <string name="ErrorSave">An error occurred while saving</string>
+    <string name="ConfirmButton"> Ok</string>
+</resources>

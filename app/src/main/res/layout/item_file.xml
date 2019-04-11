@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/base_space"
+    android:layout_marginEnd="@dimen/base_space"
+    android:layout_marginBottom="@dimen/base_space"
+    android:layout_marginTop="@dimen/base_space"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/fileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/base_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/fileTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_space"
+        android:layout_marginEnd="@dimen/base_space"
+        app:layout_constraintStart_toEndOf="@id/fileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fileDuration"/>
+
+    <TextView
+        android:id="@+id/fileDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_space"
+        android:layout_marginEnd="@dimen/base_space"
+        android:layout_margin="@dimen/base_space"
+        app:layout_constraintStart_toEndOf="@id/fileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fileOwner"/>
+
+    <TextView
+        android:id="@+id/fileOwner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_space"
+        android:layout_marginEnd="@dimen/base_space"
+        android:layout_margin="@dimen/base_space"
+        app:layout_constraintStart_toEndOf="@id/fileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fileDuration"/>
+</android.support.constraint.ConstraintLayout>
